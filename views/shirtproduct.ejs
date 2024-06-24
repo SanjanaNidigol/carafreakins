@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= shirt.name %> CARA</title>
+    <link rel="icon" href="../img/logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="/"><img src="../img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a class="active" href="/shop">Shop</a></li>
+                <li id="lg-person"><a href="/login" ><i class="far fa-user"></i></a></li>
+                <li id="lg-bag"><a href="/cart"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="/cart"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="<%= shirt.images[0] %>" width="100%" id="MainImg" alt="<%= shirt.name %>">
+            <div class="small-img-group">
+                <% const [mainImg, ...smallImgs] = shirt.images.slice(0, 5); %>
+                <% smallImgs.forEach((img, index) => { %>
+                    <div class="small-img-col">
+                        <img src="<%= img %>" width="100%" class="small-img" alt="<%= shirt.name %>">
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / <%= shirt.category %></h6>
+            <h4><%= shirt.name %></h4>
+            <% if (shirt.originalPrice) { %>
+                <h2>₹<span class="discount-price"><%= shirt.price %></span>
+                    <span class="original-price"> ₹<%= shirt.originalPrice %></span></h2>
+            <% } else { %>
+                <h2>₹<span class="price"><%= shirt.price %></span></h2>
+            <% } %>
+          
+            <form action="/add-to-cart" method="POST" id="addToCartForm">
+                <div id="size-container">
+                    <label for="size"></label>
+                    <div id="sizes">
+                        <% shirt.sizes.forEach(size => { %>
+                            <label class="size-option">
+                                <input type="radio" name="size" value="<%= size %>" required>
+                                <%= size %>
+                            </label>
+                        <% }); %>
+                    </div>
+                    <p id="sizeError" style="color: red; display: none;">Select a size</p>
+                </div>
+                <br>
+                <input type="hidden" name="productId" value="<%= shirt.id %>">
+                <input type="hidden" name="productType" value="shirt">
+                <button type="submit" class="normal" onclick="return validateSize()">Add to Cart</button>
+            </form>
+            
+            <br><br><br>
+            
+            <section id="delivery">
+                <div class="delivery_new">
+                    <h3>Check Delivery Availability</h3>
+                    <br>
+                    <div class="input-area">
+                        <input type="text" id="pincode" class="zipcode_bar_input_1528" placeholder="Enter Pincode" maxlength="6">
+                        <button id="checkAvailability" class="normal">Check Availability</button>
+                    </div>
+                    <br>
+                    <div id="deliveryMessage"></div>
+                </div>
+            </section>
+                    
+            <div class="service_policy__text">
+                <h4>Service Policy</h4>
+                <div class="list_wp">
+                    <img src="../img/products/delivery.png" alt="" width="20" height="15" loading="lazy">
+                    <span>
+                        <span>Cash on delivery available in most areas</span>
+                        <span class="subtext"></span>
+                    </span>
+                    <br>
+                    <img src="../img/products/delivery_1_1.png" alt="" width="20" height="15" loading="lazy">
+                    <span>
+                        <span>Easy Shipping & Return Policy</span>
+                        <span class="subtext"></span>
+                    </span>
+                    <br>
+                    <img src="../img/products/delivery_1_2.png" alt="" width="20" height="15" loading="lazy">
+                    <span>Secure Payments</span>
+                </div>
+            </div>
+            <br>
+            <div>
+                <h2>Product Details</h2>
+                <span><strong>Fabric specification:</strong> <%= shirt.fabric %><br><br></span>
+                <% if (shirt.fit) { %>
+                    <span><strong>Fit specification:</strong> <%= shirt.fit %><br><br></span>
+                <% } %>
+                <span><strong>Description:</strong> <%= shirt.description %><br><br></span>
+                <% if (shirt.inseam) { %>
+                    <span><strong>Inseam Length:</strong> <%= shirt.inseam %><br><br></span>
+                <% } %>
+                <% if (shirt.model) { %>
+                    <span><strong>Model:</strong> <%= shirt.model %><br><br></span>
+                <% } %>
+                
+                <span>Find yourself in MY FREAKINS, where everyone has something to call their own! </span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>SIMILAR PRODUCTS</h2>
+        <div class="pro-container">
+            <% featuredShirts.forEach(shirt => { %>
+                <div class="pro" onclick="window.location.href='/shirtproduct/<%= shirt.id %>';">
+                    <img src="<%= shirt.images[0] %>" alt="<%= shirt.name %>">
+                    <div class="des">
+                        <span>freakins</span>
+                        <h5><%= shirt.name %></h5>
+                        <div class="star">
+                            <% for (let i = 0; i < 5; i++) { %>
+                                <% if (i < Math.floor(shirt.star_rating)) { %>
+                                    <i class="fas fa-star"></i>
+                                <% } else if (i < shirt.star_rating) { %>
+                                    <i class="fas fa-star-half-alt"></i>
+                                <% } else { %>
+                                    <i class="far fa-star"></i>
+                                <% } %>
+                            <% } %>
+                        </div>
+                        <% if (shirt.discounted_price && shirt.original_price) { %>
+                            <h4 class="discount-price">₹<%= shirt.discounted_price %>
+                                <span class="original-price">₹<%= shirt.original_price %></span>
+                            </h4>
+                        <% } else if (shirt.price) { %>
+                            <h4 class="price">₹<%= shirt.price %></h4>
+                        <% } %>
+                    </div>
+                    <a href="/cart"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 4th Phase, Yelhanka, Bangalore</p>
+            <p><strong>Phone:</strong> +91 92410 79844 / (+91) 99027 53246</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="/login">Sign In</a>
+            <a href="/cart">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../img/pay/app.jpg" alt="">
+                <img src="../img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../img/pay/pay.png" alt="">
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= details.name %> CARA </title>
+    <link rel="icon" href="..\img\logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="/"><img src="../img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="/">Home</a></li>
+                <li><a href="/shop" class="active">Shop</a></li>
+                <li id="lg-person"><a href="/login" ><i class="far fa-user"></i></a></li>
+                <li id="lg-bag"><a href="/cart"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="/cart"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="page-header">
+        <div class="slide-show-container">
+            <div class="slideshow__slide active">
+                <img src="..\img\products/banner2.jpg" alt="Slide 1" style="width: 100%; height: 100%;">
+            </div>
+            <div class="slideshow__slide">
+                <img src="..\img\products\banner.jpg" alt="Slide 2" style="width: 100%; height: 100%;">
+            </div>
+            <div class="slideshow__slide">
+                <img src="../img/products/vex_ban.jpg" alt="Slide 3" style="width: 100%; height: 100%;">
+            </div>
+            <div class="slideshow__slide">
+                <img src="..\img\products\newban.jpg" alt="Slide 4" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+        <div class="slide-indicators">
+            <div class="indicator active" data-index="0"></div>
+            <div class="indicator" data-index="1"></div>
+            <div class="indicator" data-index="2"></div>
+            <div class="indicator" data-index="3"></div> 
+        </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <% details.forEach(product => { %>
+                <div class="pro" >
+                    <img src="<%= product.images[0] %>" alt="" onclick="window.location.href='/sproduct/<%= product.id %>';">
+                    <div class="des">
+                        <span>freakins</span>
+                        <h5><%= product.name %></h5>
+                        <div class="star">
+                            <% for (let i = 0; i < 5; i++) { %>
+                                <% if (i < Math.floor(product.star_rating)) { %>
+                                    <i class="fas fa-star"></i>
+                                <% } else if (i < product.star_rating) { %>
+                                    <i class="fas fa-star-half-alt"></i>
+                                <% } else { %>
+                                    <i class="far fa-star"></i>
+                                <% } %>
+                            <% } %>
+                        </div>
+                        <% if (product.price && product.originalPrice) { %>
+                            <h4 class="discount-price">₹<%= product.price %>
+                                <span class="original-price">₹<%= product.originalPrice %></span>
+                            </h4>
+                        <% } else if (product.price) { %>
+                            <h4 class="price">₹<%= product.price %></h4>
+                        <% } %>
+                    </div>
+                </div>
+                <br>
+            <% }); %>
+        </div>
+    </section>
+      <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>4th Phase, Yelhanka, Bangalore</p>
+            <p><strong>Phone:</strong> +91 92410 79844/ (+91) 99027 53246</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="/login">Sign In</a>
+            <a href="/cart">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../img/pay/app.jpg" alt="">
+                <img src="../img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../img/pay/pay.png" alt="">
+        </div>
+        
+    </footer>
+    <script src="../script.js"> </script> 
+    <script>   
+    document.addEventListener('DOMContentLoaded', function() {
+    var slides = document.querySelectorAll('.slideshow__slide');
+    var indicators = document.querySelectorAll('.indicator');
+    var currentIndex = 0;
+    var interval;
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === index);
+        });
+        currentIndex = index;
+    }
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+    function startSlideShow() {
+        interval = setInterval(nextSlide, 2000); 
+    }
+    indicators.forEach(indicator => {
+        indicator.addEventListener('click', function() {
+            clearInterval(interval);
+            showSlide(parseInt(this.getAttribute('data-index')));
+            startSlideShow();
+        });
+    });
+    startSlideShow();
+    showSlide(currentIndex);
+});
+    </script>
+</body>
+</html>

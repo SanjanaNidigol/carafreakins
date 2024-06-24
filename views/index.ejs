@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARA </title>
+    <link rel="icon" href="..\img\logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="/"><img src="../img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li id="lg-person"><a href="/login"><i class="far fa-user"></i></a></li>
+                <li id="lg-bag"><a href="/cart"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="/cart"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="hero">
+        <h3>EVERYTHING DENIM</h3>
+        <h1>CARA<br>Powered By FREAKINS </h1>
+        <h3></h3>
+        <button><a href="/shop">Shop Now</a></button>
+    </section>
+    
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>SEE WHAT'S TRENDING</p>
+        <div class="pro-container">
+            <% details.forEach(product => { %>
+                <div class="pro">
+                    <img src="<%= product.images[0] %>" alt="" onclick="window.location.href='/sproduct/<%= product.id %>';">
+                    <div class="des">
+                        <span>freakins</span>
+                        <h5><%= product.name %></h5>
+                        <div class="star">
+                            <% for (let i = 0; i < 5; i++) { %>
+                                <% if (i < Math.floor(product.star_rating)) { %>
+                                    <i class="fas fa-star"></i>
+                                <% } else if (i < product.star_rating) { %>
+                                    <i class="fas fa-star-half-alt"></i>
+                                <% } else { %>
+                                    <i class="far fa-star"></i>
+                                <% } %>
+                            <% } %>
+                        </div>
+            
+                        <% if (product.price && product.originalPrice) { %>
+                            <h4 class="discount-price">₹<%= product.price %>
+                                <span class="original-price">₹<%= product.originalPrice %></span>
+                            </h4>
+                        <% } else if (product.price) { %>
+                            <h4 class="price">₹<%= product.price %></h4>
+                        <% } %>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+    
+    <a href="#">
+        <section id="banner" class="section-m1">       
+        </section>
+    </a>
+    
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Men - Shirts</p>
+        <div class="pro-container">
+            <% shirtdetails.forEach(shirt => { %>
+                <div class="pro">
+                    <img src="<%= shirt.images[0] %>"  alt="<%= shirt.name %>" onclick="window.location.href='/shirtproduct/<%= shirt.id %>';">
+                    <div class="des">
+                        <span>freakins</span>
+                        <h5><%= shirt.name %></h5>
+                        <div class="star">
+                            <% for (let i = 0; i < 5; i++) { %>
+                                <% if (i < Math.floor(shirt.star_rating)) { %>
+                                    <i class="fas fa-star"></i>
+                                <% } else if (i < shirt.star_rating) { %>
+                                    <i class="fas fa-star-half-alt"></i>
+                                <% } else { %>
+                                    <i class="far fa-star"></i>
+                                <% } %>
+                            <% } %>
+                        </div>
+                        <% if (shirt.price && shirt.originalPrice) { %>
+                            <h4 class="discount-price">₹<%= shirt.price %>
+                                <span class="original-price">₹<%= shirt.originalPrice %></span>
+                            </h4>
+                        <% } else if (shirt.price) { %>
+                            <h4 class="price">₹<%= shirt.price %></h4>
+                        <% } %>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+    
+    
+    <section id="sm-banner" class="section-p1" onclick="window.location.href='/shop';">
+        <div class="banner-box">
+           <!-- pink cargo image-->
+        </div>
+        <div class="banner-box banner-box2">
+        </div>
+    </section>
+    <section id="banner3" onclick="window.location.href='/shop';">
+        <div class="banner-box">
+            <h2>Freaky Firday </h2>
+            <h3>FLASH SALE</h3>
+        </div>
+        <div class="banner-box banner-box2">
+        </div>
+        <div class="banner-box banner-box3">
+        </div>
+    </section>
+    
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>4th Phase, Yelhanka, Bangalore</p>
+            <p><strong>Phone:</strong> +91 92410 79844/ (+91) 99027 53246</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="/login">Sign In</a>
+            <a href="/cart">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../img/pay/app.jpg" alt="">
+                <img src="../img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../img/pay/pay.png" alt="">
+        </div>
+    </footer>
+   <script src="../script.js"> </script> 
+</body>
+</html>

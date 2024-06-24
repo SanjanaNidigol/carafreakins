@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .cart-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .cart-header h2 {
+            margin: 0;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .cart-item-details {
+            flex: 2;
+        }
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+        }
+        .cart-item-actions form {
+            display: flex;
+            align-items: center;
+        }
+        .cart-item-actions input[type="number"] {
+            width: 50px;
+            margin: 0 10px;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .cart-item-actions button {
+            background-color: transparent;
+            border: none;
+            color: #088178;
+            cursor: pointer;
+            padding: 5px;
+        }
+        .cart-summary {
+            text-align: right;
+            padding: 20px 0;
+        }
+        .cart-summary h3 {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .checkout-button {
+            background-color: #088178;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .empty-cart {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 275px; 
+            text-align: center;
+            margin-top: 50px;
+        }
+        .empty-cart p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #000;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="/"><img src="../img/logo.png" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li id="lg-person"><a href="/login"><i class="far fa-user"></i></a></li>
+                <li id="lg-bag"><a class="active" href="/cart"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="/cart"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="cart" class="section-p1">
+        <% if (cart.length > 0) { %>
+            <div class="cart-container">
+                <div class="cart-header">
+                    <h2 ><%= cart.length %> Items</h2>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
+                </div>
+                <% cart.forEach(item => { %>
+                    <div class="cart-item">
+                        <% if (item.type === 'shirt') { %>
+                            <img src="<%= item.images[0] %>" alt="<%= item.name %>" onclick="window.location.href='/shirtproduct/<%= item.id %>';">
+                        <% } else { %>
+                            <img src="<%= item.images[0] %>" alt="<%= item.name %>" onclick="window.location.href='/sproduct/<%= item.id %>';">
+                        <% } %>
+                        <div class="cart-item-details">
+                            <h3><%= item.name %></h3>
+                            <p>Size: <%= item.size %></p>
+                            <% if (item.discounted_price && item.original_price) { %>
+                                <p>₹<%= item.discounted_price %> <del>₹<%= item.original_price %></del></p>
+                            <% } else { %>
+                                <p>₹<%= item.price %></p>
+                            <% } %>
+                        </div>
+                        <div class="cart-item-actions">
+                            <form action="/update-cart" method="POST">
+                                <input type="hidden" name="productId" value="<%= item.id %>">
+                                <input type="hidden" name="size" value="<%= item.size %>">
+                                <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                                <input type="number" name="quantity" value="<%= item.quantity %>" min="1">
+                                <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                <button type="submit">Update</button>
+                            </form>
+                            <form action="/remove-from-cart" method="POST" style="margin-left: 20px;">
+                                <input type="hidden" name="productId" value="<%= item.id %>">
+                                <input type="hidden" name="size" value="<%= item.size %>">
+                                <button type="submit">Remove</button>
+                            </form>
+                        </div>
+                    </div>
+                <% }); %>
+                <div class="cart-summary">
+                    <% 
+                    let subtotal = cart.reduce((acc, item) => {
+                        let price = parseInt((item.discounted_price || item.price).replace(/,/g, ''), 10);
+                        return acc + price * item.quantity;
+                    }, 0); 
+                    %>
+                    <h3>Subtotal: ₹<%= subtotal.toLocaleString() %></h3>
+                    <button class="checkout-button">Checkout</button>
+                </div>
+            </div>
+        <% } else { %>
+            <div class="empty-cart">
+                <p>Your cart is empty</p>
+                <a href="/shop"><button class="checkout-button">Continue Shopping</button></a>
+            </div>
+        <% } %>
+    </section>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

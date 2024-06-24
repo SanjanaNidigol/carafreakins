@@ -1,0 +1,544 @@
+[
+    {
+        "id": "p1",
+        "name": "CLASSIC DENIM TRENCH COAT",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "2,699",
+        "originalPrice": "3,199",
+        "description": "Timeless sophistication meets contemporary style in this Classic Denim Trench Coat. With its structured silhouette and durable denim fabric, it's the perfect outerwear for all seasons. To complete your look, wear it over a white t-shirt,high-waisted jeans,and ankle boots for an effortlessly chic outfit that's always in vogue.",
+        "fabric": "100% Cotton | Rigid",
+        "fit": "Full sleeves | Relaxed fit",
+        "model":null,
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro1.jpg",
+            "../img/products/pro1_2.jpg",
+            "../img/products/pro1_3.jpg",
+            "../img/products/pro1_4.jpg",
+            "../img/products/pro1_5.jpg"
+        ]
+    },
+
+
+    {
+        "id": "p2",
+        "name": "GOTHIC CHAINED BLACK TOP",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "1,799",
+        "originalPrice": "2,598",
+        "description": "Give a classy touch to your look with this gothic chained top. Designed in a cropped frame, this separate features cross neck zip up detail and bustier fit for a chic appeal. Style it with a pair of flared pants, block heels and a watch for an evening date. Hand wash only.",
+        "fabric": "100% Cotton | Rigid",
+        "fit": "Cropped | Fitted | Sleeveless",
+        "model":null,
+        "inseam":null,
+        "sizes": ["XS", "S", "M", "L", "XL"],
+        "images": [
+            "../img/products/pro2.jpg",
+            "../img/products/pro2_5.jpg",
+            "../img/products/pro2_2.jpg",
+            "../img/products/pro2_4.jpg",
+            "../img/products/pro2_5.jpg"
+        ]
+    },
+
+    
+    {
+        "id": "p3",
+        "name": "90'S BASIC STRAIGHT JEANS",
+        "star_rating": 4.5,
+        "category": "Denim ",
+        "price": "1,499",
+        "originalPrice": "2,199",
+        "description": " A trendy addition for the modern woman who is always on the go,is this pair of blue straight jeans from Freakins.Keeping in sync with latest trends, they are designed in a straight fit profile and crafted from a sturdy cotton fabric for an unmatched feel and functionality.",
+        "fabric": "100% Cotton | Rigid",
+        "fit": "High waist | Straight fit | Street style length",
+        "model":"The model (height 5'3” , waist 23.5” , hips 32”) is wearing size 26.",
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro3.jpg",
+            "../img/products/pro3_1.jpg",
+            "../img/products/pro3_2.jpg",
+            "../img/products/pro3_3.jpg",
+            "../img/products/pro3_4.jpg"
+        ]
+    },
+
+    
+    {
+        "id": "p4",
+        "name": "BUTTON UP BODYCON SKIRT",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "1,299",
+        "originalPrice": null,
+        "description": "This denim maxi skirt will update your casual wardrobe with oodles of chicness. Fitted with a buttoned front, the bodycon silhouette comes finished with belt loops. Complete the look with a top and heels for a stylish look. (skirt only)",
+        "fabric": " 99% Cotton, 1% Spandex | Stretch",
+        "fit": "High waist | Midi skirt | Bodycon",
+        "model":"The model (height 5'7.5”, waist 25”, hips 36”) is wearing size 26.",
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro4.jpg",
+            "../img/products/pro4_1.jpg",
+            "../img/products/pro4_2.jpg",
+            "../img/products/pro4_3.jpg",
+            "../img/products/pro4_4.jpg"
+        ]
+    },
+    
+    {
+        "id": "p5",
+        "name": "DARK GREY WIDE LEG CARGO TROUSER",
+        "category": "Pants",
+        "star_rating": 4,
+        "price": "1,499",
+        "originalPrice": "2,199",
+        "description": " Introducing our Dark Grey Wide Leg Cargo Trouser. Crafted with comfort in mind,these cargo trouser seamlessly blend style and functionality. Featuring cargo pockets for storage, they're perfect for everyday wear or outdoor adventures.Embrace comfort and sophistication with our multifunctional cargo trouser.",
+        "fabric": "Cotton Poly Blend",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro5.jpg",
+            "../img/products/pro5_1.jpg",
+            "../img/products/pro5_2.jpg",
+            "../img/products/pro5_3.jpg",
+            "../img/products/pro5_4.jpg"
+        ]
+    },
+
+    
+    {
+        "id": "p6",
+        "name": "VINTAGE BLUE STRETCH BOOTCUT JEANS",
+        "category": "Denim",
+        "star_rating": 4.5,
+        "price": "1,799",
+        "originalPrice": null,
+        "description": "Vintage Blue washed bootcut jeans. Crafted with a high waistline for a flattering fit. Features distress details and whiskered wash for the classic vintage look. Finished with metal-buttoned-and-zippered fly. A sleek addition to your casual wardrobe.",
+        "fabric": "99% Cotton, 1% Elastane | Stretch",
+        "fit": "High waist | Bootcut fit | Regular length",
+        "model":"The model (height 5'3” , waist 23.5” , hips 32”) is wearing size 26.",
+        "inseam":"30 inches",
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro6.jpg",
+            "../img/products/pro6_1.jpg",
+            "../img/products/pro6_2.jpg",
+            "../img/products/pro6_3.jpg",
+            "../img/products/pro6_4.jpg"
+        ]
+    },
+
+    
+    {
+        "id": "p7",
+        "name": "FLAP PLAY CARGO JEANS",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "1,699",
+        "originalPrice": null,
+        "description": " Elevate your street style with these Flap Play Cargo Jeans, showcasing a fusion of form and function.Feature a series of flap pockets that not only add a trendy element to your outfit but also provide extra storage for your essentials. Their versatile design allows you to dress them up with a tailored shirt and boots for a smart-casual look.",
+        "fabric": "100% cotton | Rigid",
+        "fit": "High waist | Cargo fit | Regular length",
+        "model":null,
+        "inseam":"28.5 inches",
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro7.jpg",
+            "../img/products/pro7_1.jpg",
+            "../img/products/pro7_2.jpg",
+            "../img/products/pro7_3.jpg",
+            "../img/products/pro7_4.jpg"
+        ]
+    },
+    
+    {
+        "id": "p8",
+        "name": "BLACK LEATHER PANTS",
+        "category": "Pants",
+        "star_rating": 5,
+        "price": "1,499",
+        "originalPrice": "2,199",
+        "description": " Versatility and finesse is the power of this one-off leather pants. Slay it with any blouse or statement top and stay comfortable and in style all day long. Finished with concealed button fastening and metal zip closure.",
+        "fabric": "99% Leather, 1% Lycra | Stretch",
+        "fit": "High waist | Regular length | Straight Fit",
+        "model":"The model (height 5'4”, waist 26”, hips 34”) is wearing size 26.",
+        "inseam":"30.5 inches",
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro8.jpg",
+            "../img/products/pro8_1.jpg",
+            "../img/products/pro8_2.jpg",
+            "../img/products/pro8_3.jpg",
+            "../img/products/pro8_4.jpg"
+        ]
+    },
+
+    
+    {
+        "id": "p9",
+        "name": "MID BLUE DISTRESS BOOTCUT JEANS",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "1,999",
+        "originalPrice": "2,199",
+        "description": " Emulate striking looks with these mid blue distress jeans from Freakins. Milled from a stretch cotton fabric, the pair is crafted in a bootcut silhouette for a modish appeal. Versatile and stylish, it features distress details and can be paired with t-shirts and tops alike.",
+        "fabric": "99% Cotton, 1% Elastane | Stretch",
+        "fit": "High waist | Bootcut fit | Regular length",
+        "model":"The model (height 5'6”, waist 25”, hips 32”) is wearing a size 26. ",
+        "inseam":"30.5 inches  ",
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro9.jpg",
+            "../img/products/pro9_1.jpg",
+            "../img/products/pro9_2.jpg",
+            "../img/products/pro9_3.jpg",
+            "../img/products/pro9_4.jpg"
+        ]
+    },
+
+       
+    {
+        "id": "p10",
+        "name": "BLACK DOUBLE ZIPPED STRAIGHT JEANS",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "1,899",
+        "originalPrice": "2,299",
+        "description": " Contemporary and stylish denim option effortlessly merging fashion with functionality. These Black Double Zipped Straight Jeans features a straight leg silhouette. Embellished with double zipper design, adding a unique and modern twist to the classic style.Pair it with a casual top or dressed up with a blouse, for elevating your fashion game with a trendy and chic edge.",
+        "fabric": "100% cotton | Rigid",
+        "fit": "High waist | Straight fit | Regular length",
+        "model":"The model (height 5'5”, waist 26”, hips 34”) is wearing a size 26. ",
+        "inseam":"30 inches  ",
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro10.jpg",
+            "../img/products/pro10_1.jpg",
+            "../img/products/pro10_2.jpg",
+            "../img/products/pro10_3.jpg",
+            "../img/products/pro10_4.jpg"
+        ]
+    },
+
+    {
+        "id": "p11",
+        "name": "BLUE MILL WASHED BOOTCUT JEANS",
+        "category": "Denim",
+        "star_rating": 4.5,
+        "price": "1,999",
+        "originalPrice": null,
+        "description": " Introducing Blue Mill Washed Bootcut Jeans, a timeless wardrobe essential that seamlessly merges style and versatility. Crafted with premium denim, it offers durability and a comfortable fit. Throw it over a casual tee for an effortlessly cool vibe.",
+        "fabric": "100% cotton | Rigid",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro11.jpg",
+            "../img/products/pro11_1.jpg",
+            "../img/products/pro11_2.jpg",
+            "../img/products/pro11_3.jpg",
+            "../img/products/pro11_4.jpg"
+        ]
+    },
+    
+    {
+        "id": "p12",
+        "name": "FLOWER PRINT JEANS",
+        "category": "Denim",
+        "star_rating": 4,
+        "price": "2,399",
+        "originalPrice": null,
+        "description": "A stylish and versatile pair of jeans featuring a unique laser-printed flower print pattern. Crafted from high-quality denim, these jeans offer a comfortable and modern look that can be dressed up or down for any occasion.",
+        "fabric": " 100% Cotton",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro12.jpg",
+            "../img/products/pro12_1.jpg",
+            "../img/products/pro12_2.jpg",
+            "../img/products/pro12_3.jpg",
+            "../img/products/pro12_4.jpg"
+        ]
+    },
+    
+    {
+        "id": "p13",
+        "name": "TINTED DENIM TOP",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "799",
+        "originalPrice": null,
+        "description": "  Dare to be different with Tinted Denim Top! Crafted with a unique tinted finish, features washed indigo hue, square neckline and concealed zip on back exuding urban charm and style. Pair it with distressed jeans and chunky sneakers for an effortlessly cool look.",
+        "fabric": "98% Cotton, 2% Elastane | Stretch",
+        "fit": "Sleeveless | Cropped | Fitted",
+        "model":null,
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro13.jpg",
+            "../img/products/pro13_1.jpg",
+            "../img/products/pro13_2.jpg",
+            "../img/products/pro13_3.jpg",
+            "../img/products/pro13_4.jpg"
+        ]
+    },
+  
+    {
+        "id": "p14",
+        "name": "CHECKERED FISHCUT JEANS",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "1,999",
+        "originalPrice": "2,399",
+        "description": "  A stylish and versatile pair of jeans featuring a unique laser-printed checkered pattern. Crafted from high-quality denim, these jeans offer a comfortable and modern look that can be dressed up or down for any occasion.",
+        "fabric": " 100% Cotton",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro14.jpg",
+            "../img/products/pro14_1.jpg",
+            "../img/products/pro14_2.jpg",
+            "../img/products/pro14_3.jpg",
+            "../img/products/pro14_4.jpg"
+        ]
+    },
+
+     {
+        "id": "p15",
+        "name": "BLUE DANCE AROUND FRAY STRAIGHT FIT JEANS",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "1,799",
+        "originalPrice": null,
+        "description": "   A style that never goes out of vogue; these frayed jeans are sure to help you SLAY! Crafted in rigid cotton fabric, this one offers the style and comfort required to keep you at ease while on-the-go. Features classic washed hue and abstract frayed style lines makes it an uber trendy option. Go smart and casual with this one as you pair it with a bright top and chunky Colour blocked sneakers.",
+        "fabric": " 100% Cotton | Rigid",
+        "fit": " Straight fit | High waist | Regular Length",
+        "model":"The model (height 5'5”, waist 25”, hips 33”) is wearing size 26.",
+        "inseam":"29 inches",
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro15.jpg",
+            "../img/products/pro15_1.jpg",
+            "../img/products/pro15_2.jpg",
+            "../img/products/pro15_3.jpg",
+            "../img/products/pro15_4.jpg"
+        ]
+    },
+
+    {
+        "id": "p16",
+        "name": "FRONT BUTTON INDIGO TOP",
+        "category": "Denim",
+        "star_rating": 4.5,
+        "price": "799",
+        "originalPrice": null,
+        "description": "  Elevate your casual look with this Front Button Indigo Top, an unique blend of denim and sophistication. The front button design adds a touch of vintage charm, while the rich indigo color exudes timeless elegance. Pair it with white wide-leg pants and platform sandals for a chic and breezy summer outfit.",
+        "fabric": " 100% Cotton | Rigid",
+        "fit": "Sleeveless | Cropped | Fitted",
+        "model":null,
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro16.jpg",
+            "../img/products/pro16_1.jpg",
+            "../img/products/pro16_2.jpg",
+            "../img/products/pro16_3.jpg",
+            "../img/products/pro16_4.jpg"
+        ]
+    },
+
+    
+    {
+        "id": "p17",
+        "name": "SQUARE NECK DENIM JACKET WITH SLITS",
+        "category": "Denim",
+        "star_rating": 4.5,
+        "price": "1,999",
+        "originalPrice": null,
+        "description": "Discover our chic Square Neck Denim Jacket with Slits - a must-have piece for your wardrobe! This modern jacket features a unique square neckline that adds a touch of sophistication to your outfit. The strategically placed slits on the sides not only create a trendy look but also ensure breathability and comfort. Crafted from high-quality denim material, this jacket is durable and perfect for all seasons.",
+        "fabric": "Cotton",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+            "../img/products/pro17.jpg",
+            "../img/products/pro17_1.jpg",
+            "../img/products/pro17_2.jpg",
+            "../img/products/pro17_3.jpg",
+            "../img/products/pro17_4.jpg"
+        ]
+    },
+
+    
+    {
+        "id": "p18",
+        "name": "BLACK HIGH NECK FLARED DRESS",
+        "category": "Denim",
+        "star_rating": 4.5,
+        "price": "2,099",
+        "originalPrice": null,
+        "description": "Introducing the stunning black high neck flared dress, a fashion-forward piece that exudes elegance and sophistication. This dress features a high neckline that elongates the silhouette and adds a touch of modern flair. The flared skirt creates a graceful and flowy movement, perfect for any special occasion. With a long length and long sleeves, this dress offers both coverage and style, making it a versatile and chic choice for any event. ",
+        "fabric": "Polyester",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+            "../img/products/pro18.jpg",
+            "../img/products/pro18_1.jpg",
+            "../img/products/pro18_2.jpg",
+            "../img/products/pro18_3.jpg",
+            "../img/products/pro18_4.jpg"
+        ]
+    },
+
+    {
+        "id": "p19",
+        "name": "POCKET PLAY CARGO PANTS",
+        "category": "Denim",
+        "star_rating": 5,
+        "price": "1,799",
+        "originalPrice": "2299",
+        "description": "Give your bottom wear collection a stylish update with this pair of POCKET PLAY CARGO PANTS from Freakins. It features a normal fit to keep you at ease with multiple cargo pockets on the front, metal button and zip fly enclosure for practicality. Style these jeans with a casual top and sneakers or flats to attain a trendy look.",
+        "fabric": "100% cotton | Rigid",
+        "fit": "High Waist | Straight Fit | Regular Length",
+        "model":"The model (height 5’5”, waist 24.5”, hips 35.5”) is wearing size 26.",
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro19.jpg",
+            "../img/products/pro19_1.jpg",
+            "../img/products/pro19_2.jpg",
+            "../img/products/pro19_3.jpg",
+            "../img/products/pro19_4.jpg"
+        ]
+    },
+
+    {
+        "id": "p20",
+        "name": "ECRU STRAIGHT JEANS",
+        "category": "Denim",
+        "star_rating": 4,
+        "price": "1,699",
+        "originalPrice": "2199",
+        "description": "Stay in vogue wearing these ecru straight jeans from Freakins. Shaped in a straight silhouette, this chic pair comes milled from a breathable cotton fabric for all-day comfort.",
+        "fabric": "100% cotton | Rigid",
+        "fit": "High waist | Straight fit | Regular length",
+        "model":"The model (height 5'8” , waist 29” , hips 37” ) is wearing size 28.",
+        "inseam":"29 inches",
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro20.jpg",
+            "../img/products/pro20_1.jpg",
+            "../img/products/pro20_2.jpg",
+            "../img/products/pro20_3.jpg",
+            "../img/products/pro20_4.jpg"
+        ]
+    },
+
+    {
+        "id": "p21",
+        "name": "STRIPED TUBE TOP",
+        "category": "Top",
+        "star_rating": 4,
+        "price": "2099",
+        "originalPrice": null,
+        "description": "The Striped Tube Top in black and white stripes is a stylish and versatile piece that will elevate your outfit effortlessly. The strapless silhouette of this top offers a sleek and flattering fit, perfect for showcasing your shoulders and neckline. With its flattering design, comfortable fit, and timeless appeal, this tube top is sure to become a go-to favorite in your wardrobe for any season.",
+        "fabric": "Polyester",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+            "../img/products/pro21.jpg",
+            "../img/products/pro21_1.jpg",
+            "../img/products/pro21_2.jpg",
+            "../img/products/pro21_3.jpg",
+            "../img/products/pro21_4.jpg"
+        ]
+    },
+    
+    {
+        "id": "p22",
+        "name": "TINTED FULL SLEEVE DENIM SHIRT",
+        "category": "Shirt",
+        "star_rating": 4,
+        "price": "2199",
+        "originalPrice": null,
+        "description": "Introducing our stylish Tinted Full Sleeve Denim Shirt, a perfect blend of comfort and fashion. This shirt is crafted from premium quality denim fabric, making it durable and long-lasting. The tinted finish gives it a unique and trendy look that is sure to make heads turn. The full sleeves provide added coverage and versatility for different occasions. This shirt features one chest pocket, adding a touch of functionality and style.",
+        "fabric": "Cotton",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["XS", "S", "M", "L","XL"],
+        "images": [
+            "../img/products/pro22.jpg",
+            "../img/products/pro22_1.jpg",
+            "../img/products/pro22_2.jpg",
+            "../img/products/pro22_3.jpg",
+            "../img/products/pro22_4.jpg"
+        ]
+    },
+
+    {
+        "id": "p23",
+        "name": "ABSINTHE GREEN COTTON SLIM FIT SHIRT",
+        "category": "Shirt",
+        "star_rating":3.5,
+        "price": "1149",
+        "originalPrice": null,
+        "description": "Experience the perfect blend of style and comfort with our Absinthe Green Cotton Slim Fit Shirt. Made from high-quality cotton fabric, this shirt offers a sleek and flattering silhouette with its slim fit design. The absinthe green color adds a vibrant touch to your outfit, making it perfect for both casual and formal occasions. The button-down front and pointed collar add classic detailing, while the slim fit silhouette lends a contemporary edge to this wardrobe staple.",
+        "fabric": "100% Cotton",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["XS", "S", "M", "L","XL"],
+        "images": [
+            "../img/products/pro23.jpg",
+            "../img/products/pro23_1.jpg",
+            "../img/products/pro23_2.jpg",
+            "../img/products/pro23_3.jpg",
+            "../img/products/pro23_4.jpg"
+        ]
+    },
+
+    {
+        "id": "p24",
+        "name": "BISQUE CARGO JEANS",
+        "category": "Pants",
+        "star_rating": 5,
+        "price": "1399",
+        "originalPrice": "2199",
+        "description": " Upgrade your wardrobe with Bisque Cargo Jeans, the pinnacle of versatile fashion. Blend a timeless cargo-leg design with a sleek hue, delivering a look that effortlessly bridges the gap between classic and contemporary. Team them with a well-fitted blazer and leather dress shoes.",
+        "fabric": "100% Cotton | Rigid",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["26", "28", "30", "32", "34"],
+        "images": [
+            "../img/products/pro24.jpg",
+            "../img/products/pro24_1.jpg",
+            "../img/products/pro24_2.jpg",
+            "../img/products/pro24_3.jpg",
+            "../img/products/pro24_4.jpg"
+        ]
+    }
+    
+
+
+
+
+    ]
+  

@@ -1,0 +1,280 @@
+[
+    
+    
+    {
+        "id": "s1",
+        "name": "BROWN PRINTED SHIRT",
+        "category": "Shirt",
+        "star_rating": 5,
+        "price": "699",
+        "originalPrice": "999",
+        "description": "  Upgrade your wardrobe game with this Men's Brown Printed Shirt. Crafted from premium fabric,provide a functional edge.",
+        "fabric": " 100% polyester",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt1.jpg",
+            "../img/products/shirt1_1.jpg",
+            "../img/products/shirt1_2.jpg",
+            "../img/products/shirt1_3.jpg",
+            "../img/products/shirt1_4.jpg"
+        ]
+    }
+    ,
+
+    
+    {
+        "id": "s2",
+        "name": "BLACK LEATHER COWBOY MEN'S SHIRT",
+        "category": "Shirt",
+        "star_rating": 5,
+        "price": "1,599",
+        "originalPrice": "2,199",
+        "description": "  A perfectly stylish shirt to turn heads everywhere you go. Working a faux-leather finish, this full-sleeved creation is designed with a button-down front for a hint of urbane appeal. A must-have piece in every men's wardrobe. ",
+        "fabric": " 99% Leather, 1% Lycra ",
+        "fit": "Oversized | Full sleeves",
+        "model":"The model (height 6'0”, shoulder 18”, chest 35.5”, waist 26.5”) is wearing size L.",
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt2.jpg",
+            "../img/products/shirt2_1.jpg",
+            "../img/products/shirt2_2.jpg",
+            "../img/products/shirt2_3.jpg",
+            "../img/products/shirt2_4.jpg"
+        ]
+    }
+    ,
+    
+    
+    {
+        "id": "s3",
+        "name": "BLISS CHECKERED MEN'S SHIRT",
+        "category": "Shirt",
+        "star_rating": 4.5,
+        "price": "1,499",
+        "originalPrice": "1,799",
+        "description": " Upgrade your wardrobe game with Bliss Checkered Men's Shirt. Crafted from premium fabric, provide a functional edge. Pair them with a classic jeans and sneakers for an effortlessly stylish. ",
+        "fabric": " 100% cotton | Rigid",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt3.jpg",
+            "../img/products/shirt3_1.jpg",
+            "../img/products/shirt3_2.jpg",
+            "../img/products/shirt3_3.jpg",
+            "../img/products/shirt3_4.jpg"
+        ]
+    }
+    ,
+    
+    
+    {
+        "id": "s4",
+        "name": "BLACK CURRANT PRINT MEN'S RESORT SHIRT",
+        "category": "Shirt",
+        "star_rating": 5,
+        "price": "899",
+        "originalPrice": null,
+        "description": " Set out on a voyage to exotic destinations with our Black Currant Print Resort Shirt,seamlessly melding contemporary flair with timeless sophistication. Made from high-quality polyester, this shirt offers a sumptuously soft feel against the skin,ensuring all-day comfort. The short sleeves ensure breathability and freedom of movement, perfect for warmer climates and leisurely pursuits.",
+        "fabric": " 100% polyester",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt4.jpg",
+            "../img/products/shirt4_1.jpg",
+            "../img/products/shirt4_2.jpg",
+            "../img/products/shirt4_3.jpg",
+            "../img/products/shirt4_4.jpg"
+        ]
+    }
+    ,
+    
+    
+    {
+        "id": "s5",
+        "name": "LEAFY MARBLE FULL SLEEVES MEN'S SHIRT",
+        "category": "Shirt",
+        "star_rating": 4.5,
+        "price": "1,199",
+        "originalPrice": null,
+        "description": "  Presenting our Leafy Marble Full Sleeves Shirt, where classic sophistication meets contemporary elegance. The breathable polyester fabric ensures optimal comfort and freedom of movement while the a classic button-up design and full sleeves offer a polished look that's suitable for any occasion.",
+        "fabric": " 100% polyester",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt5.jpg",
+            "../img/products/shirt5_1.jpg",
+            "../img/products/shirt5_2.jpg",
+            "../img/products/shirt5_3.jpg",
+            "../img/products/shirt5_4.jpg"
+        ]
+    }
+    ,
+    
+    
+    {
+        "id": "s6",
+        "name": "WHITE BLACK PRINT SHIRT",
+        "category": "Shirt",
+        "star_rating": 5,
+        "price": "999",
+        "originalPrice": null,
+        "description": " Upgrade your wardrobe game with White Black Print Shirt. Crafted from premium fabric, provide a functional edge.",
+        "fabric": " 100% Viscose",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt6.jpg",
+            "../img/products/shirt6_1.jpg",
+            "../img/products/shirt6_2.jpg",
+            "../img/products/shirt6_3.jpg",
+            "../img/products/shirt6_4.jpg"
+        ]
+    },
+
+    {
+        "id": "s7",
+        "name": "FULL SLEEVES AVANT-GARDE PRINTED SHIRT",
+        "category": "Shirt",
+        "star_rating": 4,
+        "price": "1,099",
+        "originalPrice": null,
+        "description": " Step into the realm of avant-garde fashion with our Men's Full Sleeves Avant-Garde Printed Shirt, a daring and artistic piece that redefines traditional style boundaries with bold expression and creative flair. Crafted from high-quality fabric, this shirt offers both comfort and avant-garde style, ensuring you make a statement with confidence.",
+        "fabric": " 100% Polyester",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt7.jpg",
+            "../img/products/shirt7_1.jpg",
+            "../img/products/shirt7_2.jpg",
+            "../img/products/shirt7_3.jpg",
+            "../img/products/shirt7_4.jpg"
+        ]
+    },
+
+    {
+        "id": "s8",
+        "name": "LINE ART PRINT MEN'S RESORT SHIRT",
+        "category": "Shirt",
+        "star_rating": 5,
+        "price": "999",
+        "originalPrice": null,
+        "description": " Introducing our Line Art Print Resort Shirt, where contemporary sophistication meets laid-back luxury. Crafted from premium 100% polyester fabric in a classic beige hue, this shirt embodies the perfect blend of style and comfort for the modern-day adventurer. This shirt features a relaxed fit and classic resort collar, offering effortless style for any occasion.",
+        "fabric": " 100% Polyester",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt8.jpg",
+            "../img/products/shirt8_1.jpg",
+            "../img/products/shirt8_2.jpg",
+            "../img/products/shirt8_3.jpg",
+            "../img/products/shirt8_4.jpg"
+        ]
+    },
+
+    {
+        "id": "s9",
+        "name": "BLACK CHECKERED SHIRT",
+        "category": "Shirt",
+        "star_rating": 4,
+        "price": "999",
+        "originalPrice": "1,699",
+        "description": "Upgrade your wardrobe game with this Men's Black Checkered Shirt. Crafted from premium fabric, provide a functional edge.",
+        "fabric": " 100% polyester | Rigid",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL"],
+        "images": [
+            "../img/products/shirt9.jpg",
+            "../img/products/shirt9_1.jpg",
+            "../img/products/shirt9_2.jpg",
+            "../img/products/shirt9_3.jpg",
+            "../img/products/shirt9_4.jpg"
+        ]
+    },
+
+    {
+        "id": "s10",
+        "name": "BEIGE ABSTRACT PRINT SHIRT",
+        "category": "Shirt",
+        "star_rating": 3,
+        "price": "819",
+        "originalPrice": "1,519",
+        "description": "Upgrade your wardrobe game with Men's Beige Abstract Print Shirt. Crafted from premium fabric, provide a functional edge. Pair them with a classic jeans and sneakers for an effortlessly stylish.",
+        "fabric": "  100% Cotton | Rigid",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt10.jpg",
+            "../img/products/shirt10_1.jpg",
+            "../img/products/shirt10_2.jpg",
+            "../img/products/shirt10_3.jpg",
+            "../img/products/shirt10_4.jpg"
+        ]
+    },
+    
+    {
+        "id": "s11",
+        "name": "WHITE SHORT SLEEVE SHIRTS",
+        "category": "Shirt",
+        "star_rating": 4.5,
+        "price": "999",
+        "originalPrice": "1,699",
+        "description": " Upgrade your wardrobe game with Men's Short Sleeve Shirt. Crafted from premium fabric, provide a functional edge. Pair them with a jeans and sneakers for an effortlessly stylish.",
+        "fabric": " 100% Polyester | Rigid",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL"],
+        "images": [
+            "../img/products/shirt11.jpg",
+            "../img/products/shirt11_1.jpg",
+            "../img/products/shirt11_2.jpg",
+            "../img/products/shirt11_3.jpg",
+            "../img/products/shirt11_4.jpg"
+        ]
+    },
+
+    {
+        "id": "s12",
+        "name": "WHITE FLORAL PRINT MEN'S LINEN SHIRT",
+        "category": "Shirt",
+        "star_rating": 4.5,
+        "price": "999",
+        "originalPrice": "1,699",
+        "description": "Elevate your style with this exquisite white floral print shirt. Its elegant design and comfortable fit make it a must-have for any occasion.",
+        "fabric": " 85% Viscose 15% Linen | Rigid",
+        "fit": null,
+        "model":null,
+        "inseam":null,
+        "sizes": ["S", "M", "L", "XL", "XXL"],
+        "images": [
+            "../img/products/shirt12.jpg",
+            "../img/products/shirt12_1.jpg",
+            "../img/products/shirt12_2.jpg",
+            "../img/products/shirt12_3.jpg",
+            "../img/products/shirt12_4.jpg"
+        ]
+    }
+    
+
+
+]
